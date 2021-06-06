@@ -1,0 +1,12 @@
+type Transaction @entity {
+  id: ID! # txhash
+  amount: BigInt! # transfer amount
+  from: Bytes! # address
+  to: Bytes! # address
+}
+
+type Account @entity {
+  id: ID! # address
+  balance: BigInt! # balance
+}
+
