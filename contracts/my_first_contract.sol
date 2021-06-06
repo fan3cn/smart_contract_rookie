@@ -15,6 +15,9 @@ contract FYY {
     // token decimals
     uint public decimals;
     
+    // declare a transfer event
+    event Transfer(address indexed from, address indexed to, uint tokens);
+
     // map from address to unit, it is used to effectively show balance of a certain address.
     mapping (address => uint) public balanceOf;
     
