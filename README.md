@@ -38,7 +38,9 @@ Codes are put in the folder /script, it has the blew structure:
 - "abi.json" is ABI file which can be obtained from remix after you successfully compiled the contract.
 - accounts.json keeps the account info, if no file is found, script will create up to `ACCOUNT_NUM` accounts for you. 
 - randomTranscation.js is the main program which does the blew things:
-	- Account management: create account in blockchain and load accounts from your local file system.  
+	- Account management: 
+		- create accounts up to `ACCOUNT_NUM` in blockchain, save address and private key in `account.json` 
+		- load accounts from local file system.  
 	- Get balance of an address on a given contract address.
 	- Send transaction between addresses on a given contract address.
 	- Do random transfer.
